@@ -46,7 +46,7 @@ public class BasicSorting {
 
 	public static int[] insertionSort(int[] inputArray) {
 
-		for (int i = 0; i < inputArray.length - 1; i++) {
+		for (int i = 1; i < inputArray.length; i++) {
 
 			int value = inputArray[i];
 			int index = i;

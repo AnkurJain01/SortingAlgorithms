@@ -1,5 +1,6 @@
 import com.sort.algo.BasicSorting;
 import com.sort.algo.MergeSorting;
+import com.sort.algo.QuickSorting;
 
 public class SortingExample {
 
@@ -37,6 +38,13 @@ public class SortingExample {
 		System.out.println("\nAfter Merge Sorting:");
 
 		for (int i = 0; i < MergeSorting.mergeSort(inputArray).length; i++) {
+			System.out.print(inputArray[i]);
+		}
+		
+		inputArray = new int[] { 2, 7, 5, 1, 3, 4 };
+		System.out.println("\nAfter Quick Sorting:");
+
+		for (int i = 0; i < QuickSorting.quickSort(inputArray).length; i++) {
 			System.out.print(inputArray[i]);
 		}
 	}
