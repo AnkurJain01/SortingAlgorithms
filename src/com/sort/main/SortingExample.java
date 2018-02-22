@@ -1,3 +1,4 @@
+package com.sort.main;
 import com.sort.algo.BasicSorting;
 import com.sort.algo.CountSorting;
 import com.sort.algo.MergeSorting;
