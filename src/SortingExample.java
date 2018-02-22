@@ -1,4 +1,5 @@
 import com.sort.algo.BasicSorting;
+import com.sort.algo.CountSorting;
 import com.sort.algo.MergeSorting;
 import com.sort.algo.QuickSorting;
 
@@ -46,6 +47,14 @@ public class SortingExample {
 
 		for (int i = 0; i < QuickSorting.quickSort(inputArray).length; i++) {
 			System.out.print(inputArray[i]);
+		}
+		
+		inputArray = new int[] {5,4,7,6,7,5,9};//{ 2, 7, 5, 1, 3, 4 };
+		System.out.println("\nAfter Count Sorting:");
+
+		int[] sortedArray = CountSorting.countSort(inputArray, -9, 10);
+		for (int i = 0; i < sortedArray.length; i++) {
+			System.out.print(sortedArray[i]);
 		}
 	}
 
